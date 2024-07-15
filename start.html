@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Whatsapp</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<style>
+    .back{
+        background-color: #006542;
+        width: 100%;
+        height: 80px;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        position: fixed;
+        top: 0;
+        z-index: 9999;
+    }
+    .header{
+        justify-content: space-between;
+        display: flex;
+    }
+    .suv{
+        display: flex;
+    }
+    .saction{
+        display: flex;
+    }
+    nav ul{
+        display: flex;
+        padding-top: 14px;
+
+
+    }
+    nav ul li{
+        padding: 10px;
+        list-style: none;
+        font-family: sans-serif;
+        font-size: 20px;
+
+    }
+    nav ul li a{
+        text-decoration: none;
+        color: white;
+        margin-left: 15px;
+
+    }
+    nav ul li a:hover{
+        border-bottom: 2px solid #00f400;
+
+
+    }
+    .mb:Hover{
+        background: #00f400; 
+    }
+
+    .popup{
+        width: 400px;
+        background-color: #fff;
+        border-radius: 6px;
+        position: absolute;
+        left:39%;
+        top: 0%;
+        transform: translate(-50%,-50%) scale(0.1);
+        text-align: center;
+        box-shadow:  0 0 20px rgba(115,115,115,0.75);
+        padding: 0px 30px 30px;
+        color: #333;
+        visibility: hidden;
+        transition: transform 0.4s , top 0.4s;
+    }
+    .open-popup{
+        visibility: visible;
+        transform: translate(-50%,-50%) scale(1);
+
+        top:75% ;
+    }
+    .popup img{
+        width: 100px;
+        margin-top: -50px;
+        border-radius: 50%;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    }
+    .popup h2{
+        font: 38px;
+        font-weight: 500;
+        margin: 30px 0 10px;
+
+    }
+    .popup button{
+        width: 100%;
+        margin-top: 50px;
+        padding: 10px;
+        background-color: #6fd649;
+        color: #fff;
+        border: 0;
+        outline: none;
+        font-size: 18px;
+        border-radius: 4px;
+        cursor: pointer;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+
+
+    }
+    .Close-popup{
+        visibility: hidden;
+        transform: translate(-50%,-50%) scale(1.5);
+
+        top:0% ;
+
+    }
+    .btn2{
+        margin-top: 50px;
+        padding: 10px;
+        width: 120px;
+        background-color: #6fd649;
+        margin-left: 20px;
+        color: #fff;
+        border: 0;
+        outline: none;
+        font-size: 22px;
+        border-radius: 30px;
+        font-weight: 500;
+        cursor: pointer;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+
+    }
+    .eng::before{
+        content: "";
+        position: absolute;
+        left: 50%;
+        top: 100%;
+        transform: translateX(-50%);
+        border: 15px solid;
+        border-color:#fff #fff #fff #fff ;
+    }
+    .ghj .eng{
+        visibility: hidden;
+    }
+    .ghj:hover .eng{
+        visibility: visible;
+    }
+</style>
+<script>
+    
+</script>
+
+</head>
+<body>
+    <div class="back">
+        <div class="header">
+            <div class="suv">
+                <i class="fa-brands fa-whatsapp fa-2xl" style="color: white; position: absolute; top: 6%; left: 2%; padding-top: 3.2%; padding-left: -10%;"></i> 
+        <p style="color: white; font-family: sans-serif; padding-left: 60px; font-size: 30px;"> <a href="index.html" style="text-decoration: none; color: white;"><strong>WhatsApp</strong> Business </a></p></div>
+        <div class="suve">
+            <nav>
+                <ul> 
+                    <div class="ghj" style="display: flex;">
+                    <li><a href="#">Products</a></li>
+                 
+                    
+                        <li> <div class="eng" style="background-color: white; color: black; padding-left: 20px; font-family: sans-serif; position: absolute; top: 100%; left: 30%; width: 850px; height: 350px; box-shadow:  0 0 20px rgba(115,115,115,0.75) ; border-radius: 10px;  ">
+                            <h4 style="font-family: sans-serif; font-size: 25px;">Products</h4>
+                            <div class="icon" style="display: flex;">
+                        <p> <i class="fa-brands fa-whatsapp fa-xl" style="color: #00f400;"></i> <span style="margin-left: 20px; font-family: sans-serif; font-size: 20px;">Platform </span>
+                        <br> _____________________ <br> <br> Overview <br><br>Features <br><br> Pricing</p>
+    
+                        <p style="font-family: sans-serif;  margin-left: 40px;"> <i class="fa-solid fa-link" style="color: #00f400;"></i><span style="margin-left: 10px; font-family: sans-serif; font-size: 20px;"> Business App </span> <br> _____________________ <br> <br> OverView<br><br>Features <br><br> How To Get Started</p>
+                        <p style="font-family: sans-serif;  margin-left: 40px;"> <i class="fa-solid fa-share-nodes" style="color: #00f400;"></i><span style="margin-left: 10px; font-family: sans-serif; font-size: 20px;"> Find a partner </span> <br> _____________________ <br> <br> Overview<br><br>How To Get Create Ad</p>
+    
+                        </div></li></div>
+                    <div class="ghj">
+                    <li><a href="#">Resources</a></li>
+                    
+                        
+                            <li> <div class="eng" style="background-color: white; color: black; padding-left: 20px; font-family: sans-serif; position: absolute; top: 100%; left: 40%; width: 400px; height: 350px; box-shadow:  0 0 20px rgba(115,115,115,0.75) ; border-radius: 10px;  ">
+                                <h4 style="font-family: sans-serif; font-size: 25px;">Resource</h4>
+                            <p> <i class="fa-brands fa-whatsapp fa-xl" style="color: #00f400;"></i> <span style="margin-left: 20px; font-family: sans-serif; font-size: 20px;">Balog </span></p>
+                            <p style="font-family: sans-serif; margin-top: 25px;"> <i class="fa-solid fa-envelope fa-xl" style="color: #00f400;"></i><span style="margin-left: 17px; font-family: sans-serif; font-size: 20px;"> Succes Stories </span></p>
+                            <p style="font-family: sans-serif; margin-top: 25px;"> <i class="fa-sharp fa-solid fa-question fa-xl" style="color: #00f400;"></i><span style="margin-left: 23px; font-family: sans-serif; font-size: 20px;"> FAQS </span></p>
+                            </div></li></div>
+                    <div class="ghj" style="display: flex;">
+                    <li> <div class="ff"></div><a href="#">Developer</a></li>
+                    <li> <div class="eng" style="background-color: white; color: black; padding-left: 20px; font-family: sans-serif; position: absolute; top: 100%; left: 50%; width: 560px; height: 350px; box-shadow:  0 0 20px rgba(115,115,115,0.75) ; border-radius: 10px;  ">
+                        <h4 style="font-family: sans-serif; font-size: 25px;">Developers</h4>
+                        <div class="icon" style="display: flex;">
+                    <p> <i class="fa-brands fa-whatsapp fa-xl" style="color: #00f400;"></i> <span style="margin-left: 20px; font-family: sans-serif; font-size: 20px;">Platform </span>
+                    <br> _____________________ <br> <br> Developer Hub <br><br>Get Started</p>
+    
+                    <p style="font-family: sans-serif;  margin-left: 40px;"> <i class="fa-solid fa-link" style="color: #00f400;"></i><span style="margin-left: 10px; font-family: sans-serif; font-size: 20px;"> Find a partner </span> <br> _____________________ <br> <br> Developer Hub <br><br>Get Started</p>
+                    </div></li></div>
+    
+                    <div class="ghj">
+                    <li ><div class="ff"><a href="#">Partners</a></li>
+                        <li> <div class="eng" style="background-color: white; color: black; padding-left: 20px; font-family: sans-serif; position: absolute; top: 100%; left: 50%; width: 400px; height: 250px; box-shadow:  0 0 20px rgba(115,115,115,0.75) ; border-radius: 10px;  ">
+                            <h4 style="font-family: sans-serif; font-size: 25px;">Partners</h4>
+                        <p> <i class="fa-brands fa-whatsapp fa-xl" style="color: #00f400;"></i> <span style="margin-left: 20px; font-family: sans-serif; font-size: 20px;">Become Bartner </span></p>
+                        <p style="font-family: sans-serif; margin-top: 25px;"> <i class="fa-sharp fa-solid fa-check-to-slot fa-xl" style="color: #00f400;"></i><span style="margin-left: 17px; font-family: sans-serif; font-size: 20px;"> Find a partner </span></p>
+                        </div></li></div></ul>
+    
+    
+                </ul>
+            </nav>
+        </div>
+       <div class="suv" style="padding-bottom: 50px;">
+        <p style="padding-left: 20px; padding-right: 20px; padding-bottom: 15px; padding-top: 15px;  background: #00f400; border-radius: 17px; font-family: sans-serif; font-size: 20px; width: 130px; height: 20px; text-align: center; margin-right:10px ; ">Get Started</p>
+        <a href="ahmed.html" style="text-decoration: none; color: black;"><p style="padding-left: 20px; padding-right: 20px; padding-bottom: 15px; margin-bottom: 20%;  padding-top: 15px; background: white; border-radius: 17px; font-family: sans-serif; font-size: 20px; width: 130px; height: 20px; text-align: center; margin-right: 10px; ">Download App  </p></a></div>
+    </div></div>
+    <div class="saction">
+    
+        <div class="scan" style="margin-left: 50px; position: absolute; top: 12.5%;left: -3.2%;  background-color: #006542; width: 100%; height: 850px;">
+            <p style="font-family: sans-serif; padding-left: 20px; color: white; font-size: 20px; padding-top: 30px;">  Business Platform </p>
+            
+            <p style="font-size: 40px; color: #00f400; font-family: sans-serif; padding-left: 20px;">Transform your <br>business</p>
+            <p style="font-family: sans-serif; font-size: 20px; color: white;padding-left: 20px;">WhatsApp Business Platform is for medium <br>to large businesses  who are looking to scale <br>engagement of audiences, accelerate sales <br>and drive better customer support outcomes.</p>
+          
+        </div> 
+        <div class="scan" style="background: white; position: absolute; top: 20%; left: 45%; border-radius: 15px; box-shadow:  0 0 20px rgba(115,115,115,0.75); height: 790px; width: 700px;  margin-right: 50px;">
+            <p style="font-family: sans-serif; font-size: 19px; padding-left: 25px; padding-top: 25px;">For businesses who want to get started  with the WhatsApp Business <br>Platform, please fill out the form below.</p>
+           <div class="in" style="display: flex; "><div class="x" style="padding-left: 25px; font-family:sans-serif ;font-size: 20px;"> <label><strong>First Name *</strong></label><br>
+            <input style="height: 40px; width: 250px; border-radius: 5px; font-size: 20px ;" type="text" name=""><br></div>
+            <div class="x"  style="padding-left: 25px; font-family:sans-serif ; font-size: 20px;">
+            <label><strong>Last Name *</strong></label><br>
+            <input style="height: 40px; width: 250px; border-radius: 5px; font-size: 20px ;" type="text" name=""></div></div>
+             <div class="in" style="display: flex; padding-top: 20px;"><div class="x" style="padding-left: 25px; font-family:sans-serif ;"> <label><strong>Work Email *</strong></label><br>
+            <input style="height: 40px; width: 250px; border-radius: 5px; font-size: 20px ;" type="Email" name="" ><br></div>
+            <div class="x"  style="padding-left: 25px; font-family:sans-serif ;">
+            <label><strong>
+Job Role *</strong></label><br>
+             <select style="height: 50px; width: 260px; border-radius: 5px; font-family: sans-serif;border :2px solid black; font-size: 20px;" >
+                <option value="hhh">Select One</option>
+                <option value="hhh">Developer</option>
+                <option value="hhh">Customer Service</option>
+                <option value="hhh">Business Development</option>
+                <option value="hhh">Other</option></select>
+            </div></div>
+            <div class="in" style="display: flex; padding-top: 20px; "><div class="x" style="padding-left: 25px; font-family:sans-serif ;"> <label><strong>Company Name *</strong></label><br>
+            <input style="height: 40px; width: 250px; border-radius: 5px; font-size: 20px ;" type="Text" name=""><br></div>
+        </div>
+        <div class="in" style="display: flex; padding-top: 20px; "><div class="x" style="padding-left: 25px; font-family:sans-serif ;"> <label><strong>Where is your business headquartered? *</strong></label><br>
+             <select style="height: 50px; width: 550px; border-radius: 5px; font-family: sans-serif; font-size: 20px; border :2px solid black;" >
+                <option value="hhh">Select One</option>
+                <option value="hhh">Somalia</option>
+                <option value="hhh">Kenya</option>
+                <option value="hhh">Uk</option>
+                <option value="hhh">United State</option>
+                <option value="hhh">Rusia</option>
+                <option value="hhh">Sweden</option>
+                <option value="hhh">France</option>
+                <option value="hhh">Spain</option>
+                <option value="hhh">Norway</option>
+                <option value="hhh">Argentine</option>
+                <option value="hhh">Portugal</option>
+                <option value="hhh">Algeria</option></select>
+        </div>
+        </div>
+          <div class="in" style="display: flex; padding-top: 20px; "><div class="x" style="padding-left: 25px; font-family:sans-serif ;"> <label><strong>How many employees does your business have? *</strong></label><br>
+             <select style="height: 50px; width: 550px; border-radius: 5px; font-family: sans-serif; font-size: 20px; border :2px solid black;" >
+                <option value="hhh">Select One</option>
+                <option value="hhh">1 to 9</option>
+                <option value="hhh">10 to 99</option>
+                <option value="hhh">100 to 999</option>
+                <option value="hhh">1,000 to 9,999</option>
+
+                </select>
+        </div>
+        </div>
+         <p style="font-family: sans-serif; font-size: 19px; padding-left: 25px; padding-top: 25px;">By ticking this box, you agree to receive marketing related electronic communications from Meta, including news, events, updates, and<br> promotional emails.</p>
+         <div class="yt" style="padding-left: 25px; padding-top:15px; font-family: sans-serif; font-size: 17px;" >
+         <input type="checkbox" name="" >I Agree</div>
+        <div class="container"> <button class="mb  , btn2" type="button" onclick="openpopup() " id="btn1" >Submit</button>
+            <div class="popup" id="popup">
+                <img src="check_5610944 (1).png" width="90px">
+                <h2>Thank You</h2>
+                <p>You Detaild Has Been Succesfully Submitted. Thanks!</p>
+           <a href="index.html"> <button type="button" onclick="closepopup() " id="btn1">Ok</button></a>
+        </div>
+            </div>
+    </div></div>
+        <div class="foot" style="background:#00f400; height: 100px; width: 100%; display: flex; position: absolute; top: 149%; padding-left: 15px; padding-top: 30px; font-family: sans-serif; color: black; font-size: 20px; border-bottom-left-radius: 10px; border-bottom-right-radius:10px;">
+    <div class="sub">
+        <i class="fa-brands fa-whatsapp fa-xl" ></i>
+               <p style=" font-family: sans-serif;"><strong>WhatsApp</strong> Business</p>
+
+
+
+    </div>
+        <div class="sub4" style="margin-left:  75px;">
+        <p>Trust & <br> Safety</p>
+        
+        </div>
+    <div class="sub4" style="margin-left:  55px;">
+        <p>Business Messaging <br> Policy</p>
+        
+
+
+    </div>
+    <div class="sub4" style="margin-left:  55px;">
+        <p>Help </p>
+        
+       
+
+
+    </div>
+      <div class="sub4" style="margin-left:  55px;">
+        <p>Terms And <br> Conditions </p>
+        
+       
+
+
+    </div>
+      <div class="sub4" style="margin-left:  55px;">
+        <p>Date <br> Policy </p>
+        
+       
+
+
+    </div>
+      <div class="sub4" style="margin-left:  55px;">
+        <p> 2024 © WhatsApp Business </p>
+        
+       
+
+
+    </div>
+</div>
+<script>
+    let popup=document.getElementById("popup");
+    function openpopup(){
+        
+        popup.classList.add('open-popup')
+    }
+    function closepopup(){
+        close.openpopup
+        
+        popup.classLista.remove( "open-popup")
+    };
+    
+</script>
+</body></html>
